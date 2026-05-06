@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+  /* Dizayndagi ranglarni o'zgaruvchi sifatida kiriting */
+  --color-space-dark: #050b1a; /* To'q ko'k fon */
+  --color-space-blue: #0a192f;
+  --color-accent: #ffffff;      /* Oq matnlar uchun */
+  
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+:root {
+  background-color: var(--color-space-dark);
+  color: white;
+}

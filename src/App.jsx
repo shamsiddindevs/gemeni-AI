@@ -1,11 +1,26 @@
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import About from "./sections/About";
+import Activities from "./sections/Activities";
+import Events from "./sections/Events";
+import Hero from "./sections/Hero";
+import Partners from "./sections/Partners";
 
 
-const App = () => {
+function App() {
   return (
-    <h1 class="text-3xl font-bold underline text-red-500 ">
-      Hello world!
-    </h1>
-  )
+    <div className="min-h-screen bg-space-dark font-sans selection:bg-blue-500/30">
+      {/* <Navbar /> */}
+      <main>
+        <Hero />
+        <About />
+        <Activities />
+        <Events />
+        <Partners />
+      </main>
+      <Footer />
+    </div>
+  );
 }
 
-export default App
+export default App;
